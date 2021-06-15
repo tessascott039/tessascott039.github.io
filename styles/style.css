@@ -1,0 +1,69 @@
+html {
+    font-family: 'PT Serif', serif;
+    background-color:rgb(250, 243, 231);
+  }
+  /* different displays depending on print or screen width under 768px */
+  .desktop, .print {
+    display: none;
+  }
+
+  @media print {
+    .mobile, .desktop {
+      display: none;
+    }
+
+    .print {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .mobile {
+      display: none;
+    }
+    .desktop {
+      display: block; 
+    }
+  }
+
+  body {
+    width: 650px;
+    margin: 0 auto;
+    background-color:lightgoldenrodyellow;
+    padding: 0 20px 20px 20px;
+    border: 5px solid rgb(158, 173, 155);
+  }
+    
+  h1 {
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 3px 3px 1px rgb(204, 203, 203);
+  }
+  
+  p, li {
+    text-align:justify;
+    list-style-position: inside;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: .5px;
+  }
+
+  img {
+    border:solid 1px rgb(30, 44, 27);
+  }
+
+  .columns {
+    border: solid 1px rgb(158, 173, 155);
+    display: flex;
+  }
+
+  .columns > div {
+    border: solid 1px #ccc;
+    flex: 1; 
+  }
+
+  .columns > div:nth-of-type(2) {
+    flex: 2;
+  }
+
+  
